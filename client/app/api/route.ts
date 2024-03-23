@@ -1,7 +1,7 @@
 import {NextResponse} from 'next/server';
 
-export const GET = async ( req : any ) => {
-    const body = await req.jason()
+export const POST = async ( req : any ) => {
+    const body = await req.json()
     return NextResponse.json({
         success: true,
         message: "Hello, World"
