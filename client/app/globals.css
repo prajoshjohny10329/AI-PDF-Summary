@@ -31,3 +31,70 @@ body {
     text-wrap: balance;
   }
 }
+.first-head{
+  text-align: center;
+  padding: 30px 30px;
+  font-size: xx-large;
+}
+.div-pdf{
+  display: flex;
+  justify-content: center;
+}
+
+.search-div{
+  width: 100%;
+  height: 30px;
+  padding: 30px 35px;
+}
+.search-div > input{
+  width: 100%;
+  height: 26px;
+  border-radius: 27px;
+}
+.button-div{
+  display: flex;
+  justify-content: center;
+  
+}
+#submit{
+  width: 100px;
+  background: red;
+  border-radius: 10px;
+}
+#reset{
+  width: 100px;
+  background: rgb(85, 85, 85);
+  border-radius: 10px;
+}
+
+
+
+/* type writer effect */
+
+.typewriter{
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Apply the typing animation to the text */
+.typewriter-text {
+  overflow: hidden;
+  border-right: .15em solid orange; /* Cursor effect */
+
+  margin: 10px 20px; /* Centers the text */
+  letter-spacing: .15em; /* Adjust letter spacing */
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
